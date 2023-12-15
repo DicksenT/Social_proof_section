@@ -16,26 +16,27 @@
     padding: 40px;
 }
 .page{
-    width: 1120px;
-
+    width: 1000px;
 }
 .top{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: center;
 }
 .intro{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 .bold{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 44px;
     width: 80%;
     margin-bottom: 20px;
 }
 .stars{
-    width: 50%;
+    width: 51%;
 }
 .star{
     display: flex;
@@ -44,20 +45,22 @@
     display: flex;
     background-color: hsl(300, 24%, 96%);
     margin-bottom: 12px;
-    padding: 20px;
+    padding: 14px 24px;
+    gap: 20px; 
     align-items: center;
-    justify-content: space-around;
     font-weight: 700;
     border-radius: 8px;
     width: 360px;
 }
 .bottom{
-    display: flex;
-    gap: 4px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(3, 2px) 70px 70px repeat(4, 10px) ;
 }
 .card{
     height: 200px;
-    width: 360px;
+    width: 300px;
     background-color: hsl(300, 43%, 22%);
     display: flex;
     flex-direction: column;
@@ -88,4 +91,19 @@
     width: 100%;
     height: 100%;
     border-radius: 24px;
+}
+.one{
+    grid-area: 1 / 1;
+}
+.two{
+    grid-area: 2 / 3;
+}
+.three{
+    grid-area: 3 / 5;
+}
+.no2{
+    margin-left: 40px;
+}
+.no3{
+    margin-left: 80px;
 }
